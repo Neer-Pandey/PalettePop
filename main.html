@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PalettePop – Choose Your Vibe</title>
+  <link rel="stylesheet" href="theme-gallery.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bahiana&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <h1 class="title">Choose Your Vibe</h1>
+
+  <div class="theme-gallery">
+    <div class="theme-card" onclick="selectTheme('ocean')">
+      <img src="images/ocean.png" alt="Ocean" />
+      <div class="theme-title">Ocean</div>
+    </div>
+    <div class="theme-card" onclick="selectTheme('sunset')">
+      <img src="images/sunset.jpg" alt="Sunset" />
+      <div class="theme-title">Sunset</div>
+    </div>
+    <div class="theme-card" onclick="selectTheme('matcha')">
+      <img src="images/macha.jpg" alt="Matcha" />
+      <div class="theme-title">Matcha</div>
+    </div>
+    <div class="theme-card" onclick="selectTheme('bubblepop')">
+      <img src="images/bubblepop.jpg" alt="Bubblepop" />
+      <div class="theme-title">Bubblepop</div>
+    </div>
+    <div class="theme-card" onclick="selectTheme('cosmic')">
+      <img src="images/cosmo.jpg" alt="Cosmic" />
+      <div class="theme-title">Cosmic</div>
+    </div>
+    <div class="theme-card" onclick="selectTheme('mocha')">
+      <img src="images/mocha.jpg" alt="Mocha Cafe" />
+      <div class="theme-title">Mocha Cafe</div>
+    </div>
+  </div>
+
+  <!-- Color Palette Section -->
+  <div id="color-palette" class="color-palette">
+    <h2 class="palette-title">Color Palette</h2>
+    <div id="palette-container" class="palette-container"></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

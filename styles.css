@@ -1,0 +1,99 @@
+/* Importing a rounded font */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html,h1 {
+  height: 100%;
+  
+  font-family: 'Allura', cursive;
+  color: #dabddb;
+  text-shadow: 2px 2px 5px rgba(106, 90, 205, 0.3); /* soft purple glow */
+}
+h1{
+    font-size: 96px;
+}
+.landing {
+    
+  background-image: url('images/ombre1.jpg');
+  background-size: contain;
+  
+  background-position: center;
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.landing::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255, 255, 255, 0.5); /* Optional: pastel overlay for readability */
+  backdrop-filter: blur(3px);
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  color: #333;
+}
+
+
+
+.launch-btn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #D4BAEA;
+  color: white;
+  font-size: 48px;
+  font-family: 'Bahiana', cursive;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.launch-btn:hover {
+  background-color: #f89d94;
+  transform: scale(1.05);
+}
+.color-swatch {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  display: inline-block;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.palette-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.theme-card {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.theme-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.theme-title {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
